@@ -51,4 +51,45 @@ box-sizing: border-box;
 }
 /*#endregion*/
 
+body {
+  height: 100vh;
+}
 
+.App {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 
+=========================================
+TODOS
+=========================================
+*/
+
+.todo {
+  background-color: grey;
+  margin: 1em 1em;
+  padding: 1em;
+  min-width: 20em;
+  max-width: 20em;
+}
+
+.todo-header {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 94%;
+}
+
+.make-new-todo {
+  display: flex;
+  flex-direction: column;
+  min-width: 20em;
+}
+
+summary {
+  /* display: block; */
+  /* height: 1em; */
+  cursor: pointer;
+}
