@@ -31,15 +31,11 @@ const MakeNewTodo = ({setArrayOfTodoObjects, arrayOfTodoObjects}) => {
   return (
     <div
       className='make-new-todo'
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        width: '10em'
-      }}
     >
 
-      <label htmlFor="Todo-Title">Todo Title</label>
+      <label htmlFor="Todo-Title">Todo Title *</label>
       <input 
+        required
         type="text" 
         name="Todo-Title"
         value={todoTitle}
