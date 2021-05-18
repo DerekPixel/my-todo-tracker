@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import MakeNewTodo from './Components/MakeNewTodo';
+import Todo from './Components/Todo';
 
 function App() {
 
@@ -23,12 +24,7 @@ function App() {
 
 
     return (
-      <div
-        key={i}
-      >
-        <h2>{todoObject.todoTitle}</h2>
-        <p>{todoObject.todoInfo}</p>
-      </div>
+      <Todo todoObject={todoObject} key={i} />
     )
   })
 
@@ -53,7 +49,9 @@ function App() {
         arrayOfTodoObjects={arrayOfTodoObjects}
       />
 
-      <div>
+      <div
+        className='todos'
+      >
         {todoObjectsMapped}
       </div>
 
