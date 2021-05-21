@@ -15,7 +15,8 @@ const MakeNewTodo = ({setArrayOfTodoObjects, arrayOfTodoObjects}) => {
 
       var newTodoObject = {
         todoTitle,
-        todoInfo
+        todoInfo,
+        todoIndex: arrayOfTodoObjectsClone.length,
       }
       
       arrayOfTodoObjectsClone.push(newTodoObject);
