@@ -1,21 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Todo = ({todoObject}) => {
+const Todo = ({todoObject, removeTodoObject}) => {
+
   return (
     <div
       className='todo'
     >
       <details>
-        <summary>
-          <div
-            className='todo-header'
-          >
-            <h2>{todoObject.todoTitle}</h2>
-            <button
-              className='todo-delete-btn'
-            >X</button>
-          </div>
+        <summary
+          className='todo-header'
+        >
+          {todoObject.todoTitle}
         </summary>
 
         <div
@@ -25,6 +21,10 @@ const Todo = ({todoObject}) => {
         </div>
       </details>
 
+      <button
+        className='todo-delete-btn'
+        onClick={() => removeTodoObject(todoObject.todoIndex)}
+      >X</button>
 
     </div>
   )
@@ -32,6 +32,7 @@ const Todo = ({todoObject}) => {
 
 Todo.propTypes = {
   todoObject: PropTypes.object,
+  removeTodoObject: PropTypes.func,
 }
 
 export default Todo
