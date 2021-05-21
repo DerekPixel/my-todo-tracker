@@ -68,28 +68,32 @@ TODOS
 =========================================
 */
 
+.todos {
+  width: 20em;
+}
+
 .todo {
   background-color: grey;
-  margin: 1em 1em;
+  margin: 1em 0;
   padding: 1em;
-  min-width: 20em;
-  max-width: 20em;
+  position: relative;
+  /* min-width: 20em; */
+  width: 100%;
+  /* max-width: 20em; */
 }
 
 .todo-header {
-  display: inline-flex;
-  justify-content: space-between;
-  width: 94%;
+  cursor: pointer;
+}
+
+.todo-delete-btn {
+  position: absolute;
+  right: 1em;
+  top: 1em;
 }
 
 .make-new-todo {
   display: flex;
   flex-direction: column;
   min-width: 20em;
-}
-
-summary {
-  /* display: block; */
-  /* height: 1em; */
-  cursor: pointer;
 }
