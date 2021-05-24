@@ -43,6 +43,10 @@ const MakeNewTodo = ({setArrayOfTodoObjects, arrayOfTodoObjects}) => {
         onChange={(e) => setTodoTitle(e.target.value)}
       />
 
+      <label htmlFor="Todo-Complete-By">Complete By</label>
+      <input type="time" name="" id="" />
+      <input type="date" name="" id="" />
+
       <label htmlFor="Todo-Info">Todo Info</label>
       <textarea 
         name="Todo-Info"
