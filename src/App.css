@@ -82,8 +82,12 @@ TODOS
   /* max-width: 20em; */
 }
 
-.todo-header {
+.todo-summary {
   cursor: pointer;
+}
+
+.todo-header {
+  display: inline;
 }
 
 .todo-delete-btn {
