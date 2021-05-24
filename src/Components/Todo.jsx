@@ -9,9 +9,12 @@ const Todo = ({todoObject, removeTodoObject}) => {
     >
       <details>
         <summary
-          className='todo-header'
+          className='todo-summary'
         >
-          {todoObject.todoTitle}
+          <h2
+            className='todo-header'
+          >{todoObject.todoTitle}</h2>
+          <div>date</div>
         </summary>
 
         <div
